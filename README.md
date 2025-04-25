@@ -1,4 +1,4 @@
-# FakeStore
+# FakeStore - LetCode
 
 Este repositório contém os testes automatizados do site **FakeStore**, uma plataforma de e-commerce fictícia. Os testes foram desenvolvidos utilizando o **Cypress** e estão integrados ao **GitHub Actions** para execução contínua.
 
