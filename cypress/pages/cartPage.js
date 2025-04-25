@@ -1,6 +1,6 @@
 class CartPage {
     elements = {
-        firstProductCard: () => cy.get(':nth-child(1) > .card > .card-footer > .card-footer-item'),
+        firstProductCard: () => cy.get('.card-footer-item').first(),
         addToCartButton: () => cy.get('.card-content > .columns > :nth-child(1) > .button'),
         cartIconButton: () => cy.get('.is-inline-flex > :nth-child(1)'),
         checkoutButton: () => cy.get('.has-text-centered > .button'),
@@ -14,6 +14,7 @@ class CartPage {
             this.elements.addToCartButton().click()
         })
     }
+    
 
     goToCart() {
         this.elements.cartIconButton().click()
