@@ -10,8 +10,9 @@ class CartPage {
     }
 
     addFirstProductToCart() {
-        this.elements.firstProductCard().click()
-        this.elements.addToCartButton().should('be.visible').click()
+        this.elements.firstProductCard().click().then(() => {
+            this.elements.addToCartButton().click()
+        })
     }
 
     goToCart() {
